@@ -8,7 +8,19 @@
 </head>
 <body>
 
-<%= yield %>
+    <nav>
+        <% Settings.clients.each do |key, settings| %>
+            <%= link_to settings.name, "/#{key}" %>
+        <% end %>
+    </nav>
+    
+    <%= yield :view %>
+    
+    <%= yield %>
+
+    <footer>
+        <%= yield :footer %>
+    </footer>
 
 </body>
 </html>

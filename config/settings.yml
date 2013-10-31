@@ -1,6 +1,8 @@
 clients:
   kitchendaily:
     name: Kitchen Daily
+    rollup: iD397SbcBlj
+    newrelic_url: https://rpm.newrelic.com/accounts/159223/applications/1568411
     servers:
       web 1:
         name: Web 1
@@ -44,8 +46,8 @@ clients:
       web 4:
         name: Web 4
         code: 75PCZ06gGnf
-  aol other:
-    name: AOL Other
+  aol-other:
+    name: AOL
     servers:
       admin:
         name: Admin
@@ -84,7 +86,7 @@ clients:
         name: Admin
         code: aiSVE6UdfBs
   asics:
-    name: ASICS Support Your Marathoner
+    name: ASICS
     servers:
       web 1:
         name: Web 1
