@@ -8,6 +8,11 @@ var statusapp = (function(){
     
             self = this;
             
+            if(document.location.protocol == 'https:') {
+                $('iframe').load( function() {
+                    $('iframe').contents().find(".chart_header").remove();
+                });
+            }
         },
         
     };
