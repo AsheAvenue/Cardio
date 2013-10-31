@@ -79,10 +79,10 @@ clients:
     servers:
       web 1:
         name: Web 1
-        code: 6SxKXYIbQf7
-      web 2:
-        name: Web 2
-        code: hhEwREbIYzi
+        code: dlnEDuUnTcA
+      admin:
+        name: Admin
+        code: aiSVE6UdfBs
   asics:
     name: ASICS Support Your Marathoner
     servers:
