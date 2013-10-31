@@ -1,0 +1,97 @@
+/* reset */
+
+html{color:#000;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var,optgroup{font-style:inherit;font-weight:inherit;}del,ins{text-decoration:none;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:baseline;}sub{vertical-align:baseline;}legend{color:#000;}input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;}input,button,textarea,select{*font-size:100%;}
+*:focus,a:focus,img:focus,input:focus{outline-style:none;}
+
+/* fonts */
+
+@font-face {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: normal;
+    src: url('/fonts/proximanova-regular.eot');
+    src: url('/fonts/proximanova-regular.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/proximanova-regular.woff') format('woff'),
+         url('/fonts/proximanova-regular.ttf') format('truetype'),
+         url('/fonts/proximanova-regular.svg#ProximaNovaRegular') format('svg');
+}
+@font-face {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 300;
+    src: url('/fonts/proximanova-light.eot');
+    src: url('/fonts/proximanova-light.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/proximanova-light.woff') format('woff'),
+         url('/fonts/proximanova-light.ttf') format('truetype'),
+         url('/fonts/proximanova-light.svg#ProximaNovaLight') format('svg');
+}
+@font-face {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 600;
+    src: url('/fonts/proximanova-semibold.eot');
+    src: url('/fonts/proximanova-semibold.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/proximanova-semibold.woff') format('woff'),
+         url('/fonts/proximanova-semibold.ttf') format('truetype'),
+         url('/fonts/proximanova-semibold.svg#ProximaNovaSemibold') format('svg');
+}
+
+/* layout */
+
+html,
+body {
+    color: #404040;
+    font: normal 15px/1.846 'Proxima Nova', 'Lucida Grande', Arial, sans-serif;
+}
+html {
+    background: #ecf0f1;
+}
+body {
+    padding: 10px;
+}
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+}
+    h1 {
+        color: #2ecc71;
+        font-weight: 800;
+        font-size: 42px;
+        line-height: 1;
+    }
+    h2 {
+        color: #2ecc71;
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 1;
+    }
+a {
+    color: #2ecc71;
+    text-decoration: none;
+}
+a:hover {
+    color: #16a085;
+}
+.button {
+    background: #2ecc71;
+    color: #fff;
+    font-weight: 600;
+    display: inline-block;
+    padding: 10px 30px;
+    line-height: 1;
+    text-decoration: none;
+    border: 0px;
+    cursor: pointer;
+}
+.button:hover {
+    background: #16a085;
+    color: #fff;
+}
+
+.row {
+    width: 10000px;
+    clear: both;
+}
+.row .pane {
+    float: left;
+    padding-right: 30px;
+}

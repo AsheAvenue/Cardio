@@ -1,0 +1,22 @@
+clients:
+  illroots:
+    name: ILLROOTS
+    servers:
+      web:
+        name: Web
+        code: hST91BS9WEy
+      admin:
+        name: Admin
+        code: k2SbGS3YfdE
+  hightimes:
+    name: High Times
+    servers:
+      web 1:
+        name: Web 1
+        code: 9HyjKls8x24
+      web 2:
+        name: Web 2
+        code: 7wuHASEXywK
+      web 3:
+        name: Web 3
+        code: jYrryF955bk

@@ -1,0 +1,12 @@
+<% Settings.clients.each do |key, client| %>
+    <div class="row">
+        <h1><%= client.name %></h1>
+        <% client.servers.each do |key, server| %>
+            <div class="pane">
+                <h2><%= server.name %></h2>
+                <iframe src="https://rpm.newrelic.com/public/charts/<%= server.code %>" width="800" height="300" scrolling="no" frameborder="no"></iframe>
+            </div>
+        <% end %>
+        <div class="clr">
+    </div>
+<% end %>
