@@ -1,13 +1,58 @@
 clients:
-  illroots:
-    name: ILLROOTS
+  kitchendaily:
+    name: Kitchen Daily
     servers:
-      web:
-        name: Web
-        code: hST91BS9WEy
+      web 1:
+        name: Web 1
+        code: Lt3esu5JvQ
+      web 2:
+        name: Web 2
+        code: 8gruSwtairb
+      web 3:
+        name: Web 3
+        code: 5peEtkXrePf
+      web 4:
+        name: Web 4
+        code: jcOLXhOJKkM
+  makers:
+    name: Makers
+    servers:
+      web a:
+        name: Web A
+        code: aiNXrs7o0xe
+      web b:
+        name: Web B
+        code: 2jxLIQ0m3Dc
+      web c:
+        name: Web C
+        code: 1HQuWlznmGc
+      web d:
+        name: Web D
+        code: 1HQuWlznmGc
+  homesessive:
+    name: Homesessive
+    servers:
+      web 1:
+        name: Web 1
+        code: 48vgbIQLy1u
+      web 2:
+        name: Web 2
+        code: hVWKB20QGDJ
+      web 3:
+        name: Web 3
+        code: 7jbcy5Brnmw
+      web 4:
+        name: Web 4
+        code: 75PCZ06gGnf
+  aol other:
+    name: AOL Other
+    servers:
       admin:
         name: Admin
-        code: k2SbGS3YfdE
+        code: cxkklyGSxiN
+      staging:
+        name: Staging
+        code: 33JYBc6gnNt
   hightimes:
     name: High Times
     servers:
@@ -20,3 +65,30 @@ clients:
       web 3:
         name: Web 3
         code: jYrryF955bk
+  bluegrass:
+    name: The Bluegrass Situation
+    servers:
+      web 1:
+        name: Web 1
+        code: 4OdCxn9SPhl
+      web 2:
+        name: Web 2
+        code: j3pglZ7TN0z
+  illroots:
+    name: ILLROOTS
+    servers:
+      web 1:
+        name: Web 1
+        code: 6SxKXYIbQf7
+      web 2:
+        name: Web 2
+        code: hhEwREbIYzi
+  asics:
+    name: ASICS Support Your Marathoner
+    servers:
+      web 1:
+        name: Web 1
+        code: 8dOikmwOHTv
+      web 2:
+        name: Web 2
+        code: 7zaIMrBzUhK

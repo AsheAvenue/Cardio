@@ -88,10 +88,10 @@ a:hover {
 }
 
 .row {
-    width: 10000px;
+    width: 4000px;
     clear: both;
 }
 .row .pane {
     float: left;
-    padding-right: 30px;
+    padding-right: 20px;
 }
