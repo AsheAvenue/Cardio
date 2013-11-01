@@ -12,6 +12,10 @@ Copy the example config file:
 
 Now get to editing the config:  
 
+    auth:
+      enabled: true
+      username: <Cardio username>
+      password: <Cardio password>
     loop:
       enabled: true
       seconds: 15

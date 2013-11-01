@@ -1,3 +1,7 @@
+auth:
+  enabled: true
+  username: <Cardio username>
+  password: <Cardio password>    
 loop:
   enabled: true
   seconds: 15
