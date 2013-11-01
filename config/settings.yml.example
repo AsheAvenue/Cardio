@@ -1,0 +1,57 @@
+loop:
+  enabled: true
+  seconds: 15
+clients:
+  <client key>:
+    name: <client name>
+    summary: 
+      type: newrelic
+      code: <New Relic Application embed code>
+    links:
+      newrelic:
+        name: New Relic
+        url: <New Relic URL>
+    children:
+      web 1:
+        name: Web 1
+        type: newrelic
+        code: <New Relic Server embed code>
+      web 2:
+        name: Web 2 
+        type: newrelic
+        code: <New Relic Server embed code>
+      web 3:
+        name: Web 3
+        type: newrelic
+        code: <New Relic Server embed code>
+      web 4:
+        name: Web 4
+        type: newrelic
+        code: <New Relic Server embed code>
+  <client key>:
+    name: <client name>
+    summary: 
+      type: newrelic
+      code: <New Relic Application embed code>
+    links:
+      newrelic:
+        name: New Relic
+        url: <New Relic URL>
+    children:
+      web 1:
+        name: Web 1
+        type: newrelic
+        code: <New Relic Server embed code>
+      web 2:
+        name: Web 2 
+        type: newrelic
+        code: <New Relic Server embed code>
+      web 3:
+        name: Web 3
+        type: newrelic
+        code: <New Relic Server embed code>
+      web 4:
+        name: Web 4
+        type: newrelic
+        code: <New Relic Server embed code>
+
