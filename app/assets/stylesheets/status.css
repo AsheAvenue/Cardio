@@ -107,6 +107,12 @@ nav {
     white-space: nowrap;
 }
 
+    nav .cardio-icon {
+        font-size: 22px;
+        line-height: 60px;
+        color: white;
+        margin-right: 20px;
+    }
     nav a {
         display: inline;
         color: white;
