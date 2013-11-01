@@ -2,7 +2,9 @@
 
 An easy-to-configure beautiful dashboard for embedded server graphs, performance indicators, and status doohickies. Cardio can be used on a desktop browser or as a full-screen app on a NOC wall monitor, or even on a tablet. It lets you show multiple levels of charts/graphs for each of your properties, and investigate status at high and low levels, according to your configurations.
 
-![Cardio](/public/img/Client.png)
+![Client](/public/img/Client.png)
+
+![Children](/public/img/Children.png)
 
 Installation
 --
