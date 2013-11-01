@@ -9,17 +9,20 @@ class HomeController < ApplicationController
   
   def client
     @slug = params[:slug]
-    @settings = Settings.clients[@slug]
-    @play = params[:play]
+    @client = Settings.clients[@slug]
+    
+    if Settings.loop.enabled == true
+      @play = params[:play]
+    end
     
     #figure out the next item in the play cycle
     @next_key = get_next_key(@slug)
     
   end
   
-  def servers
+  def children
     @slug = params[:slug]
-    @settings = Settings.clients[@slug]
+    @client = Settings.clients[@slug]
   end
   
   private

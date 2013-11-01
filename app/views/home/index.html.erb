@@ -1,21 +1,23 @@
 <% content_for :view do %>
-    <div class="view">
-        <% if @play %>
-            <a href="/<%= @slug %>"><div class="icon-ios7-pause"></div></a>
-        <% else %>
-            <a href="/<%= @next_key %>/play"><div class="icon-ios7-play"></div></a>
-        <% end %>
-    </div>
+    <% if Settings.loop.enabled %>
+        <div class="view">
+            <% if @play %>
+                <a href="/<%= @slug %>"><div class="icon-ios7-pause"></div></a>
+            <% else %>
+                <a href="/<%= @next_key %>/play"><div class="icon-ios7-play"></div></a>
+            <% end %>
+        </div>
+    <% end %>
 <% end %>
 
 <div class="all">
     <% Settings.clients.each do |key, client| %>
         <div class="row">
             <h1><a href="/<%= key %>"><%= client.name %></a></h1>
-            <% client.servers.each do |key, server| %>
+            <% client.children.each do |key, server| %>
                 <div class="pane">
-                    <h2><%= server.name %></h2>
-                    <iframe src="https://rpm.newrelic.com/public/charts/<%= server.code %>" width="800" height="300" scrolling="no" frameborder="no"></iframe>
+                    <h2><%= server.name %> </h2>
+                    <%= raw generate_embed(server.type, server.code, "800", "300") %>
                 </div>
             <% end %>
             <div class="clr"></div>

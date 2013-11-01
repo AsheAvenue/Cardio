@@ -1,0 +1,23 @@
+<div class="children">
+    <% @client.children.each do |key, server| %>
+        <div class="server">
+            <h2><%= server.name %></h2>
+            <%= raw generate_embed(server.type, server.code, "100%", "38%") %>
+        </div>
+    <% end %>
+</div>
+
+<% content_for :footer do %>
+    <footer>
+        <div class="buttons">
+            <a href="/<%= @slug %>" class="button">Back to <%= @client.name %></a>
+            <% @client.links.each do |key, link| %>
+                <%= link_to "View on #{link.name}", link.url, :class => 'button', :target => '_blank' %>   
+            <% end %>
+        </div>
+        <div class="title">
+            <%= @client.name %>
+        </div>
+    </footer>
+<% end %>
+
