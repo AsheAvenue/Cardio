@@ -1,6 +1,6 @@
 ![Cardio](/public/logo.png)
 
-An easy-to-configure dashboard for embedded server graphs, performance indicators, and status doohickies. Cardio can be used on a desktop browser or as a full-screen app on a NOC wall monitor, or even on a tablet. It lets you show multiple levels of charts/graphs for each of your properties, and investigate status at high and low levels, according to your configurations.
+An easy-to-configure beautiful dashboard for embedded server graphs, performance indicators, and status doohickies. Cardio can be used on a desktop browser or as a full-screen app on a NOC wall monitor, or even on a tablet. It lets you show multiple levels of charts/graphs for each of your properties, and investigate status at high and low levels, according to your configurations.
 
 Installation
 --
@@ -74,3 +74,9 @@ Note the use of terms like "Server embed code" and "Application embed code". In 
     <iframe src="https://rpm.newrelic.com/public/charts/xxxxxxxxxxxxxxx" width="500" height="300" scrolling="no" frameborder="no"></iframe>
 
 The portion at the end of the URL is what Cardio refers to as an "embed code." Log in to New Relic and grab your embed codes, then add them to the config in the summary or children code spaces.
+
+Acknowledgements + Legal
+--
+© 2013 <a href="http://www.asheavenue.com">Ashe Avenue</a>. Created by <a href="http://twitter.com/timboisvert">Tim Boisvert</a> and <a href="http://twitter.com/john2496">John Himmelman</a>.
+<br />
+Cardio is released under the MIT license.
