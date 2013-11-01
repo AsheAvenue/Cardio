@@ -2,6 +2,8 @@
 
 An easy-to-configure beautiful dashboard for embedded server graphs, performance indicators, and status doohickies. Cardio can be used on a desktop browser or as a full-screen app on a NOC wall monitor, or even on a tablet. It lets you show multiple levels of charts/graphs for each of your properties, and investigate status at high and low levels, according to your configurations.
 
+![Cardio](/public/img/Client.png)
+
 Installation
 --
 Start by cloning or forking this repo. Cardio is a Rails 4 app that eschews a database in favor of a simple configuration file. At present Cardio only supports New Relic embed codes, but pull requests containing other embed types will be appreciated.
