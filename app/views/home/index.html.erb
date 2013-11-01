@@ -1,3 +1,13 @@
+<% content_for :view do %>
+    <div class="view">
+        <% if @play %>
+            <a href="/<%= @slug %>"><div class="icon-ios7-pause"></div></a>
+        <% else %>
+            <a href="/<%= @next_key %>/play"><div class="icon-ios7-play"></div></a>
+        <% end %>
+    </div>
+<% end %>
+
 <div class="all">
     <% Settings.clients.each do |key, client| %>
         <div class="row">

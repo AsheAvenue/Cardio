@@ -5,6 +5,9 @@
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
+  <script>
+      <%= yield :script %> 
+  </script>
 </head>
 <body>
 
@@ -12,13 +15,16 @@
         <% view_all_selected_class = "selected" if @slug == "view-all" %>
         <%= link_to "View All", "/", :class => view_all_selected_class %>
         
+        <% position = 0 %>
         <% Settings.clients.each do |key, settings| %>
-        
+            <% position += 1%>
             <% selected_class = "selected" if @slug == key.to_s %>
+            <% selected_class = "#{selected_class} final" if position == Settings.clients.count %>
             <%= link_to settings.name, "/#{key}", :class => selected_class %>
-            
         <% end %>
     </nav>
+    
+    <%= yield :view %>
     
     <%= yield %>
 

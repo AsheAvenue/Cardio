@@ -1,3 +1,21 @@
+<% content_for :script do %>
+    <% if @play %>
+        setTimeout(function () {
+           window.location.href = "/<%= @next_key %>/play"; 
+        }, 10000);
+    <% end%>
+<% end %>
+
+<% content_for :view do %>
+    <div class="view">
+        <% if @play %>
+            <a href="/<%= @slug %>"><div class="icon-ios7-pause"></div></a>
+        <% else %>
+            <a href="/<%= @next_key %>/play"><div class="icon-ios7-play"></div></a>
+        <% end %>
+    </div>
+<% end %>
+
 <div class="rollup">
     <iframe src="https://rpm.newrelic.com/public/charts/<%= @settings.rollup %>" width="100%" height="88%" scrolling="no" frameborder="no"></iframe>
 </div>
@@ -5,7 +23,9 @@
 <% content_for :footer do %>
     <footer>
         <div class="buttons">
-            <%= link_to 'View Servers', "/#{@slug}/servers", :class => 'button' %>   
+            <% if @settings.servers.count > 1 %>
+                <%= link_to 'View Servers', "/#{@slug}/servers", :class => 'button' %>   
+            <% end %>
             <%= link_to 'View @ New Relic', @settings.newrelic_url, :class => 'button', :target => '_blank' %>   
         </div>
         <div class="title">

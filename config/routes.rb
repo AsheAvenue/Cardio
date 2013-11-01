@@ -3,4 +3,5 @@ Status::Application.routes.draw do
   
   get "/:slug" => 'home#client'
   get "/:slug/servers" => 'home#servers'
+  get "/:slug/play" => 'home#client', :defaults => { :play => true }
 end
