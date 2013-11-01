@@ -2,6 +2,7 @@ class HomeController < ApplicationController
   before_filter :authenticate
   
   def index
+    @slug = 'view-all'
   end
   
   def client

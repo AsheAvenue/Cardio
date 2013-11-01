@@ -1,9 +1,3 @@
-<% content_for :view do %>
-    <div class="view">
-        <a href="/"><div class="icon-grid"></div></a>
-    </div>
-<% end %>
-
 <div class="servers">
     <% @settings.servers.each do |key, server| %>
         <div class="server">
@@ -14,12 +8,14 @@
 </div>
 
 <% content_for :footer do %>
-    <div class="buttons">
-        <%= link_to "Back to #{@settings.name} Rollup", "/#{@slug}", :class => 'button' %>
-        <%= link_to 'View @ New Relic', @settings.newrelic_url, :class => 'button', :target => '_blank' %>
-    </div>
-    <div class="title">
-        <%= @settings.name %>
-    </div>
+    <footer>
+        <div class="buttons">
+            <%= link_to "Back to #{@settings.name} Rollup", "/#{@slug}", :class => 'button' %>
+            <%= link_to 'View @ New Relic', @settings.newrelic_url, :class => 'button', :target => '_blank' %>
+        </div>
+        <div class="title">
+            <%= @settings.name %>
+        </div>
+    </footer>
 <% end %>
 

@@ -18,6 +18,8 @@ clients:
         code: jcOLXhOJKkM
   makers:
     name: Makers
+    rollup: jhDrGe3aYwJ
+    newrelic_url: https://rpm.newrelic.com/accounts/159223/applications/1568461
     servers:
       web a:
         name: Web A
@@ -33,6 +35,8 @@ clients:
         code: 1HQuWlznmGc
   homesessive:
     name: Homesessive
+    rollup: 5FxPOW2STM0
+    newrelic_url: https://rpm.newrelic.com/accounts/159223/applications/1630825
     servers:
       web 1:
         name: Web 1
@@ -46,17 +50,26 @@ clients:
       web 4:
         name: Web 4
         code: 75PCZ06gGnf
-  aol-other:
-    name: AOL
+  aol-admin:
+    name: AOL Admin
+    rollup: j7Z3M32XZdK
+    newrelic_url: https://rpm.newrelic.com/accounts/159223/applications/2496562
     servers:
       admin:
         name: Admin
         code: cxkklyGSxiN
+  aol-staging:
+    name: AOL Staging
+    rollup: hqStgfhph4p
+    newrelic_url: https://rpm.newrelic.com/accounts/159223/applications/1549538
+    servers:
       staging:
         name: Staging
         code: 33JYBc6gnNt
   hightimes:
     name: High Times
+    rollup: evlmPe5rJ6F
+    newrelic_url: https://rpm.newrelic.com/accounts/159223/applications/1136225
     servers:
       web 1:
         name: Web 1
@@ -69,6 +82,8 @@ clients:
         code: jYrryF955bk
   bluegrass:
     name: The Bluegrass Situation
+    rollup: 9DcTFIJ3EBV
+    newrelic_url: https://rpm.newrelic.com/accounts/159223/applications/2138180
     servers:
       web 1:
         name: Web 1
@@ -78,6 +93,8 @@ clients:
         code: j3pglZ7TN0z
   illroots:
     name: ILLROOTS
+    rollup: fQxnBKrRp1
+    newrelic_url: https://rpm.newrelic.com/accounts/159223/applications/2536238
     servers:
       web 1:
         name: Web 1
@@ -87,6 +104,8 @@ clients:
         code: aiSVE6UdfBs
   asics:
     name: ASICS
+    rollup: jTXqoctDqEO
+    newrelic_url: https://rpm.newrelic.com/accounts/159223/applications/1817668
     servers:
       web 1:
         name: Web 1

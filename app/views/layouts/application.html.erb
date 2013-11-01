@@ -9,18 +9,20 @@
 <body>
 
     <nav>
+        <% view_all_selected_class = "selected" if @slug == "view-all" %>
+        <%= link_to "View All", "/", :class => view_all_selected_class %>
+        
         <% Settings.clients.each do |key, settings| %>
-            <%= link_to settings.name, "/#{key}" %>
+        
+            <% selected_class = "selected" if @slug == key.to_s %>
+            <%= link_to settings.name, "/#{key}", :class => selected_class %>
+            
         <% end %>
     </nav>
     
-    <%= yield :view %>
-    
     <%= yield %>
 
-    <footer>
-        <%= yield :footer %>
-    </footer>
+    <%= yield :footer %>
 
 </body>
 </html>
