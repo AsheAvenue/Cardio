@@ -10,8 +10,8 @@ pods:
     type: chart
     name: Kitchen Daily
     summary: 
-      type: newrelic
-      code: iD397SbcBlj
+      type: generic
+      code: http://www.asheavenue.com
     links:
       newrelic:
         name: New Relic

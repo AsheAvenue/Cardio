@@ -32,7 +32,7 @@
     <% end %>
 <% end %>
 
-<div class="summary">
+<div class="summary <%= @pod.summary.type %>">
     <%= raw generate_embed(@pod.summary.type, @pod.summary.code, "100%", "88%") %>
 </div>
 
