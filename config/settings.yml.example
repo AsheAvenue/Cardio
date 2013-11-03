@@ -5,7 +5,7 @@ auth:
 loop:
   enabled: true
   seconds: 15
-clients:
+pods:
   <client key>:
     name: <client name>
     summary: 

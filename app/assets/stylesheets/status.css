@@ -47,7 +47,7 @@ html {
     background: #ecf0f1;
 }
 body {
-    padding: 10px;
+    padding: 10px 0px 10px 0px;
 }
 h1,h2,h3,h4,h5,h6,p {
     margin: 0;
@@ -56,8 +56,8 @@ h1,h2,h3,h4,h5,h6,p {
     h1 a {
         color: #2ecc71;
         font-weight: 800;
-        font-size: 42px;
-        line-height: 60px;
+        font-size: 45px;
+        line-height: 45px;
         text-decoration: none;
     }
     h1 a:hover {
@@ -108,10 +108,15 @@ nav {
 }
 
     nav .cardio-icon {
+        float: left;
         font-size: 22px;
         line-height: 60px;
         color: white;
         margin-right: 20px;
+    }
+    nav .cardio-title {
+        float: left;
+        padding-top: 17px;
     }
     nav a {
         display: inline;
@@ -164,6 +169,40 @@ footer {
         text-decoration: none;
     }
 
+.all {
+    padding-top: 60px;
+}
+
+    .all .tile {
+        float: left;
+        width: 360px;
+        height: 200px;
+        background-color: white;
+        margin: 0 0 10px 10px;
+        padding: 20px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+        
+        .all .tile.play {
+            background-color: #e74c3c;
+        }
+        
+            .all .tile.play .play-button {
+                margin: 40px auto;
+                width: 100px;
+                height: 100px;
+                box-sizing: border-box;
+                color: white;
+                font-size: 100px;
+                text-decoration: none;
+            }
+
+        .all .tile .icon {
+            color: #2ecc71;
+            font-size: 60px;
+        }
+        
 .view {
     position: fixed;
     top: 0;
@@ -186,31 +225,18 @@ footer {
         text-decoration: none;
     }
 
-.row {
-    width: 3350px;
-    padding-top: 20px;
-    border-bottom: 1px solid #bdc3c7;
-}
-.row .pane {
-    float: left;
-    padding-right: 20px;
-}
-
 .summary,
 .children {
     position: relative;
     width: 100%;
     height: 100%;
-    padding-top: 18px;
+    padding: 18px 10px 10px 10px;
     clear: both;
+    box-sizing: border-box;
 }
 
 .children {
     padding-top: 60px;
-}
-
-.all {
-    padding-top: 45px;
 }
 
 .children .server {

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Status</title>
+  <title>Cardio</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
@@ -12,17 +12,7 @@
 <body>
 
     <nav>
-        <span class="icon-heart cardio-icon"></span>
-        <% view_all_selected_class = "selected" if @slug == "view-all" %>
-        <%= link_to "View All", "/", :class => view_all_selected_class %>
-        
-        <% position = 0 %>
-        <% Settings.clients.each do |key, settings| %>
-            <% position += 1%>
-            <% selected_class = "selected" if @slug == key.to_s %>
-            <% selected_class = "#{selected_class} final" if position == Settings.clients.count %>
-            <%= link_to settings.name, "/#{key}", :class => selected_class %>
-        <% end %>
+        <%= yield :nav %>
     </nav>
     
     <%= yield :view %>

@@ -1,5 +1,19 @@
+<% content_for :nav do %>
+    <span class="icon-heart cardio-icon"></span>
+    <% view_all_selected_class = "selected" if @slug == "home" %>
+    <%= link_to "Home", "/", :class => view_all_selected_class %>
+
+    <% position = 0 %>
+    <% Settings.pods.each do |key, settings| %>
+        <% position += 1%>
+        <% selected_class = "selected" if @slug == key.to_s %>
+        <% selected_class = "#{selected_class} final" if position == Settings.pods.count %>
+        <%= link_to settings.name, "/#{key}", :class => selected_class %>
+    <% end %>
+<% end %>
+
 <div class="children">
-    <% @client.children.each do |key, server| %>
+    <% @pod.children.each do |key, server| %>
         <div class="server">
             <h2><%= server.name %></h2>
             <%= raw generate_embed(server.type, server.code, "100%", "38%") %>
@@ -10,13 +24,13 @@
 <% content_for :footer do %>
     <footer>
         <div class="buttons">
-            <a href="/<%= @slug %>" class="button">Back to <%= @client.name %></a>
-            <% @client.links.each do |key, link| %>
+            <a href="/<%= @slug %>" class="button">Back to <%= @pod.name %></a>
+            <% @pod.links.each do |key, link| %>
                 <%= link_to "View on #{link.name}", link.url, :class => 'button', :target => '_blank' %>   
             <% end %>
         </div>
         <div class="title">
-            <%= @client.name %>
+            <%= @pod.name %>
         </div>
     </footer>
 <% end %>

@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Status::Application.config.secret_key_base = 'bc9ba70b58c21bb34238cf1275d74835398f7487c5f97a939f4ebaf20efd3b23e6ade9891cc7ef90512474746517b20466ac06978b8e609cd9fef20d11dc20c9'
+Cardio::Application.config.secret_key_base = 'bc9ba70b58c21bb34238cf1275d74835398f7487c5f97a939f4ebaf20efd3b23e6ade9891cc7ef90512474746517b20466ac06978b8e609cd9fef20d11dc20c9'

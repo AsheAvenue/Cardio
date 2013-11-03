@@ -5,8 +5,9 @@ auth:
 loop:
   enabled: true
   seconds: 15
-clients:
+pods:
   kitchendaily:
+    type: chart
     name: Kitchen Daily
     summary: 
       type: newrelic
@@ -33,6 +34,7 @@ clients:
         type: newrelic
         code: jcOLXhOJKkM
   makers:
+    type: chart
     name: Makers
     summary: 
       type: newrelic
@@ -59,6 +61,7 @@ clients:
         type: newrelic
         code: 1HQuWlznmGc
   homesessive:
+    type: chart
     name: Homesessive
     summary: 
       type: newrelic
@@ -85,6 +88,7 @@ clients:
         type: newrelic
         code: 75PCZ06gGnf
   aol-admin:
+    type: chart
     name: AOL Admin
     summary: 
       type: newrelic
@@ -99,6 +103,7 @@ clients:
         type: newrelic
         code: cxkklyGSxiN
   aol-staging:
+    type: chart
     name: AOL Staging
     summary: 
       type: newrelic
@@ -113,6 +118,7 @@ clients:
         type: newrelic
         code: 33JYBc6gnNt
   hightimes:
+    type: chart
     name: High Times
     summary: 
       type: newrelic
@@ -135,6 +141,7 @@ clients:
         type: newrelic
         code: jYrryF955bk
   bluegrass:
+    type: chart
     name: The Bluegrass Situation
     summary: 
       type: newrelic
@@ -153,6 +160,7 @@ clients:
         type: newrelic
         code: j3pglZ7TN0z
   illroots:
+    type: chart
     name: ILLROOTS
     summary: 
       type: newrelic
@@ -171,6 +179,7 @@ clients:
         type: newrelic
         code: aiSVE6UdfBs
   asics:
+    type: chart
     name: ASICS
     summary: 
       type: newrelic

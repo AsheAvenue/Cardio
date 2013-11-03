@@ -1,26 +1,33 @@
-<% content_for :view do %>
-    <% if Settings.loop.enabled %>
-        <div class="view">
-            <% if @play %>
-                <a href="/<%= @slug %>"><div class="icon-ios7-pause"></div></a>
-            <% else %>
-                <a href="/<%= @next_key %>/play"><div class="icon-ios7-play"></div></a>
-            <% end %>
-        </div>
-    <% end %>
+<% content_for :nav do %>
+    <span class="icon-heart cardio-icon"></span>
+    <div class="cardio-title">
+        <img src="/img/name.png" />
+    </div>
 <% end %>
 
 <div class="all">
-    <% Settings.clients.each do |key, client| %>
-        <div class="row">
-            <h1><a href="/<%= key %>"><%= client.name %></a></h1>
-            <% client.children.each do |key, server| %>
-                <div class="pane">
-                    <h2><%= server.name %> </h2>
-                    <%= raw generate_embed(server.type, server.code, "800", "300") %>
-                </div>
-            <% end %>
-            <div class="clr"></div>
+    
+    <a href="/<%= @next_key %>/play">
+        <div class="tile play">
+            <div class="icon-ios7-play play-button"></div>
         </div>
+    </a>
+    
+    <% Settings.pods.each do |key, client| %>
+        <a href="/<%= key %>">
+            <div class="tile">
+                <% if client.type == "chart" %>
+                    <span class="icon icon-ios7-speedometer-outline"></span>
+                <% elsif client.type == "time" %>
+                    <span class="icon icon-ios7-stopwatch-outline"></span>
+                <% elsif client.type == "schedule" %>
+                    <span class="icon icon-ios7-calendar-outline"></span>
+                <% elsif client.type == "map" %>
+                    <span class="icon icon-ios7-location-outline"></span>
+                <% end %>
+                <h1><%= client.name %></h1>
+            </div>
+        </a>
     <% end %>
+    
 </div>

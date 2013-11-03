@@ -8,7 +8,7 @@ An easy-to-configure beautiful dashboard for embedded server graphs, performance
 
 Installation
 --
-Start by cloning or forking this repo. Cardio is a Rails 4 app that eschews a database in favor of a simple configuration file. At present Cardio only supports New Relic embed codes, but pull requests containing other embed types will be appreciated.
+Start by cloning or forking this repo. Cardio is a Rails 4 app that eschews a database in favor of a simple configuration file. At present Cardio supports generic iframes and New Relic embed codes, but pull requests containing other embed types will be appreciated.
 
 Copy the example config file:
 
@@ -23,8 +23,9 @@ Now get to editing the config:
     loop:
       enabled: true
       seconds: 15
-    clients:
+    pods:
       <client key>:
+        type: <chart|map|time|schedule>
         name: <client name>
         summary: 
           type: newrelic

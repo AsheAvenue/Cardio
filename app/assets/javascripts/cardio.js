@@ -1,4 +1,4 @@
-var statusapp = (function(){
+var cardio = (function(){
     
     var self;
     
@@ -14,5 +14,5 @@ var statusapp = (function(){
 })();
 
 $(document).ready(function(){
-    statusapp.init();
+    cardio.init();
 });    

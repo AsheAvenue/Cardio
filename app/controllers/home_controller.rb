@@ -2,14 +2,14 @@ class HomeController < ApplicationController
   before_filter :authenticate
   
   def index
-    @slug = 'view-all'
+    @slug = 'home'
     #figure out the next item in the play cycle
     @next_key = get_next_key(@slug)
   end
   
-  def client
+  def pod
     @slug = params[:slug]
-    @client = Settings.clients[@slug]
+    @pod = Settings.pods[@slug]
     
     if Settings.loop.enabled == true
       @play = params[:play]
@@ -22,7 +22,7 @@ class HomeController < ApplicationController
   
   def children
     @slug = params[:slug]
-    @client = Settings.clients[@slug]
+    @pod = Settings.pods[@slug]
   end
   
   private
@@ -30,7 +30,7 @@ class HomeController < ApplicationController
   def get_next_key(slug)
     #get the keys so we can figure out the next item
     keys = []
-    Settings.clients.each do |key, value|
+    Settings.pods.each do |key, value|
       keys << key
     end
     

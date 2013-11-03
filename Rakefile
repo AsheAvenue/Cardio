@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Status::Application.load_tasks
+Cardio::Application.load_tasks
