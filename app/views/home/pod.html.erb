@@ -1,0 +1,54 @@
+<% content_for :script do %>
+    <% if Settings.loop.enabled && @play %>
+        setTimeout(function () {
+           window.location.href = "/<%= @next_key %>/play"; 
+        }, <%= Settings.loop.seconds %>000);
+    <% end%>
+<% end %>
+
+<% content_for :nav do %>
+    <span class="icon-heart cardio-icon"></span>
+    <% view_all_selected_class = "selected" if @slug == "home" %>
+    <%= link_to "Home", "/", :class => view_all_selected_class %>
+
+    <% position = 0 %>
+    <% Settings.pods.each do |key, settings| %>
+        <% position += 1%>
+        <% selected_class = "selected" if @slug == key.to_s %>
+        <% selected_class = "#{selected_class} final" if position == Settings.pods.count %>
+        <%= link_to settings.name, "/#{key}", :class => selected_class %>
+    <% end %>
+<% end %>
+
+<% content_for :view do %>
+    <% if Settings.loop.enabled %>
+        <div class="view">
+            <% if @play %>
+                <a href="/<%= @slug %>"><div class="icon-ios7-pause"></div></a>
+            <% else %>
+                <a href="/<%= @next_key %>/play"><div class="icon-ios7-play"></div></a>
+            <% end %>
+        </div>
+    <% end %>
+<% end %>
+
+<div class="summary">
+    <%= raw generate_embed(@pod.summary.type, @pod.summary.code, "100%", "88%") %>
+</div>
+
+<% content_for :footer do %>
+    <footer>
+        <div class="buttons">
+            <% if @pod.children.count > 1 %>
+                <%= link_to 'View Children', "/#{@slug}/children", :class => 'button' %>   
+            <% end %>
+            <% @pod.links.each do |key, link| %>
+                <%= link_to "View on #{link.name}", link.url, :class => 'button', :target => '_blank' %>   
+            <% end %>
+        </div>
+        <div class="title">
+            <%= @pod.name %>
+        </div>
+    </footer>
+<% end %>
+
