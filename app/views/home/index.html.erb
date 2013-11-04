@@ -24,6 +24,10 @@
                     <span class="icon icon-ios7-calendar-outline"></span>
                 <% elsif client.type == "map" %>
                     <span class="icon icon-ios7-location-outline"></span>
+                <% elsif client.type == "twitter" %>
+                    <span class="icon icon-social-twitter-outline"></span>
+                <% elsif client.type == "image" %>
+                    <span class="icon icon-ios7-camera-outline"></span>
                 <% end %>
                 <h1><%= client.name %></h1>
             </div>

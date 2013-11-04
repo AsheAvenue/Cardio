@@ -6,6 +6,26 @@ loop:
   enabled: true
   seconds: 15
 pods:
+  twitter:
+    type: twitter
+    name: Twitter
+    summary:
+      type: generic
+      code: "http://cardiopods.herokuapp.com/twitter?widget_id=397210405744807936"
+    links:
+      twitter:
+        name: Twitter
+        url: http://twitter.com/AsheAvenue
+  instagram:
+    type: image
+    name: Instagram
+    summary:
+      type: generic
+      code: "http://cardiopods.herokuapp.com/instagram?user_id=321380188"
+    links:
+      instagram:
+        name: Instagram
+        url: http://instagram.com/AsheAvenue
   kitchendaily:
     type: chart
     name: Kitchen Daily
