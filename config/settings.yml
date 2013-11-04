@@ -11,7 +11,7 @@ pods:
     name: Twitter
     summary:
       type: generic
-      code: "http://cardiopods.herokuapp.com/twitter?widget_id=397210405744807936"
+      code: "http://cardiopods.herokuapp.com/twitter"
     links:
       twitter:
         name: Twitter
@@ -21,7 +21,7 @@ pods:
     name: Instagram
     summary:
       type: generic
-      code: "http://cardiopods.herokuapp.com/instagram?user_id=321380188"
+      code: "http://cardiopods.herokuapp.com/instagram"
     links:
       instagram:
         name: Instagram
