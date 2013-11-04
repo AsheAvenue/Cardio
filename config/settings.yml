@@ -26,6 +26,16 @@ pods:
       instagram:
         name: Instagram
         url: http://instagram.com/AsheAvenue
+  harvest:
+    type: time
+    name: Harvest
+    summary:
+      type: generic
+      code: "http://cardiopods.herokuapp.com/harvest"
+    links:
+      harvest:
+        name: Harvest
+        url: http://asheavenue.harvestapp.com
   kitchendaily:
     type: chart
     name: Kitchen Daily
