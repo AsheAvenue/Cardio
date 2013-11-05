@@ -4,6 +4,9 @@
            window.location.href = "/<%= @next_key %>/play"; 
         }, <%= Settings.loop.seconds %>000);
     <% end%>
+    
+    <!-- use the over overlay -->
+    cardio.overlay_enabled = true;
 <% end %>
 
 <% content_for :nav do %>
