@@ -11,7 +11,7 @@ pods:
     name: Twitter
     summary:
       type: generic
-      code: "http://cardiopods.herokuapp.com/twitter"
+      code: "http://localhost:3001/twitter"
     links:
       twitter:
         name: Twitter
