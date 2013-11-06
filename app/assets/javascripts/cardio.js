@@ -15,7 +15,7 @@ var cardio = (function(){
             if(cardio.overlay_enabled == true) {
                 setTimeout(function () {
                     $('.overlay').fadeIn();
-                }, 10);
+                }, 1000);
             }
         },
 
