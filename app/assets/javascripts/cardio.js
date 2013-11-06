@@ -1,27 +1,27 @@
 var cardio = (function(){
-    
+
     var self,
         overlay_enabled = false;
-    
+
     return {
-    
+
         init: function(){
-    
+
             self = this;
             self.showOverlay();
         },
-        
+
         showOverlay: function(){
             if(cardio.overlay_enabled == true) {
                 setTimeout(function () {
-                    alert('overlay here');
-                }, 1000);
+                    $('.overlay').fadeIn();
+                }, 10);
             }
         },
-        
+
         hideOverlay: function() {
             if(cardio.overlay_enabled == true) {
-                alert('hide overlay');
+                $('.overlay').fadeOut();
             }
         }
     };
@@ -29,4 +29,4 @@ var cardio = (function(){
 
 $(document).ready(function(){
     cardio.init();
-});    
+});

@@ -184,11 +184,11 @@ footer {
         box-sizing: border-box;
         text-align: center;
     }
-        
+
         .all .tile.play {
             background-color: #e74c3c;
         }
-        
+
             .all .tile.play .play-button {
                 margin: 30px auto;
                 width: 100px;
@@ -203,7 +203,7 @@ footer {
             color: #2ecc71;
             font-size: 60px;
         }
-        
+
 .view {
     position: fixed;
     top: 0;
@@ -251,4 +251,64 @@ footer {
     padding-right: 20px;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+}
+
+/* Loading overlay */
+
+.overlay {
+    background: #c9c9c9;
+    display: none;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+    .overlay h1 {
+        font-size: 74px;
+        left: 50%;
+        letter-spacing: 0.4px;
+        margin-left: -200px;
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        width: 400px;
+    }
+
+    .overlay p {
+        color: #666;
+        font-size: 15px;
+        letter-spacing: 18px;
+        line-height: 60px;
+        margin: 0 0 0 48px;
+        /*
+        font-size: 17px;
+        letter-spacing: 18px;
+        margin: 0 0 0 90px;
+        */
+    }
+
+    .overlay span {
+        -webkit-animation: pulsate 1s ease-in-out;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-direction:alternate;
+        animation-direction:alternate;
+        display:inline-block;
+        font-size: 55px;
+        left: 6px;
+        opacity: 0.0;
+        position: relative;
+        top: 0px;
+    }
+
+@-webkit-keyframes pulsate {
+    0% {
+    opacity: 0.5;
+        -webkit-transform: scale(1, 1);
+    }
+    100% {
+    opacity: 1.0;
+        -webkit-transform: scale(1.4, 1.4);
+    }
 }

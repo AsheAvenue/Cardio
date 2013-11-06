@@ -6,7 +6,7 @@
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
   <script>
-      <%= yield :script %> 
+      <%= yield :script %>
   </script>
 </head>
 <body>
@@ -14,12 +14,18 @@
     <nav>
         <%= yield :nav %>
     </nav>
-    
+
     <%= yield :view %>
-    
+
     <%= yield %>
 
     <%= yield :footer %>
+
+    <div class="overlay">
+      <h1><span class="icon-heart"></span> CARDIO
+  <p>LOADING...</p>
+      </h1>
+    </div>
 
 </body>
 </html>
